@@ -1,15 +1,27 @@
-Source: template-repository
-Section: unknown
+Source: wlsunset
+Section: x11
 Priority: optional
-Maintainer: Tsic404 <liuheng@deepin.org>
-Build-Depends: debhelper (>= 11)
-Standards-Version: 4.1.3
-Homepage: https://github.com/deepin-community/template-repository
-#Vcs-Browser: https://salsa.debian.org/debian/deepin-community-template-repository
-#Vcs-Git: https://salsa.debian.org/debian/deepin-community-template-repository.git
+Maintainer: Peymaneh <peymaneh@posteo.net>
+Build-Depends: debhelper-compat (= 13),
+               cmake,
+               libwayland-dev,
+               meson,
+               pkg-config,
+               scdoc,
+               wayland-protocols,
+               wayland-scanner++,
+Standards-Version: 4.6.2
+Vcs-Browser: https://salsa.debian.org/peymaneh/wlsunset
+Vcs-Git: https://salsa.debian.org/peymaneh/wlsunset.git
+Homepage: https://sr.ht/~kennylevinsen/wlsunset
+Rules-Requires-Root: no
 
-Package: template-repository
+Package: wlsunset
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: <insert up to 60 chars description>
- <insert long description, indented with spaces>
+Multi-Arch: foreign
+Depends: libwayland-client0,
+         ${misc:Depends},
+         ${shlibs:Depends}
+Description: Day/night gamma adjustments for Wayland
+ This package provides gamma adjustments for Wayland compositors
+ that implement wlr-gamma-control-unstable-v1, such as sway.
