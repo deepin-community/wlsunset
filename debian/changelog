@@ -1,5 +1,19 @@
-template-repository (1.0-1) unstable; urgency=medium
+wlsunset (0.3.0-1) unstable; urgency=medium
 
-  * Initial release
+  * New upstream version 0.3.0 (Closes: #1050205)
+  * d/control: Update standards version
+  * Avoid explicitly specifying -Wl,--as-needed linker flag
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+ -- Peymaneh <peymaneh@posteo.net>  Mon, 11 Sep 2023 18:08:54 +0200
+
+wlsunset (0.2.0-2) unstable; urgency=medium
+
+  * Source-only upload to allow initial migration to testing.
+
+ -- Georg Faerber <georg@debian.org>  Sun, 06 Nov 2022 12:33:18 +0000
+
+wlsunset (0.2.0-1) unstable; urgency=medium
+
+  * Initial release. (Closes: #992729)
+
+ -- Peymaneh <peymaneh@posteo.net>  Mon, 31 Oct 2022 15:47:56 +0000
